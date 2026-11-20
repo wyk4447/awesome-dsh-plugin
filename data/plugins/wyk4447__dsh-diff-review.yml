@@ -1,7 +1,14 @@
-url: https://github.com/wyk4447/dsh-diff-review
-name: wyk4447/dsh-diff-review
-category: security
-icon: https://raw.githubusercontent.com/wyk4447/dsh-diff-review/main/assets/icon-256.png
+name: dsh-diff-review
+repo: wyk4447/dsh-diff-review
 description:
-  en: 'Pre-execution review gate for file writes, edits and deletions: the tool call is held before it runs, a right-sidebar panel shows the computed diff (unified, or source versus result side by side), and nothing is written until Accept is clicked; pwsh commands that create, overwrite or delete files through a literal path are held the same way, and a command whose target is only known at runtime shows its raw command line instead of a diff.'
-  zh: '写入前的审查闸门：write、edit 与删除操作在执行前被挂起，右侧边栏展示算好的 diff（统一视图或原文/新文并排），点「接受」才真正落盘；pwsh 里通过字面路径创建、覆盖、删除文件的命令同样挂起，目标在运行时才确定的命令则展示原始命令行而非 diff。'
+  zh: 改动发生前先审查。模型要写、改、删文件时，右侧边栏弹出原文与新文的对比，点「接受」才真正落盘；支持命令级审查、多文件逐格、就地改写、按轮还原与按会话关闭。
+  en: Review file changes before they happen. When the model is about to write, edit, or delete a file, the sidebar shows a before/after diff and nothing lands until you accept. Includes command-level review, per-file tabs, in-place rewriters, per-turn restore, and a per-conversation off switch.
+screenshots:
+  - assets/screenshot-01-unified.png
+  - assets/screenshot-02-new-file.png
+  - assets/screenshot-03-full.png
+  - assets/screenshot-05-edit.png
+  - assets/screenshot-06-command.png
+  - assets/screenshot-07-delete-file.png
+  - assets/screenshot-11-history.png
+  - assets/screenshot-12-empty.png
